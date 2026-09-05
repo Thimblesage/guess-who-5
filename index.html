@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<title>5 Questions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app" aria-live="polite">
+
+<section id="screen-start" class="screen active">
+  <div class="eyebrow">GUESS WHO SOLVER</div>
+  <h1>Five questions.<br>One character.</h1>
+  <p class="sub">Answer the same five questions in order.</p>
+  <button id="start-btn" class="primary">START</button>
+</section>
+
+<section id="screen-question" class="screen">
+  <div class="topbar">
+    <button id="back-btn" class="ghost">← Back</button>
+    <div id="progress-label" class="progress-label">1 of 5</div>
+  </div>
+  <div class="progress"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="question-wrap">
+    <div class="eyebrow">QUESTION <span id="question-num">1</span></div>
+    <h2 id="question-text"></h2>
+    <p id="question-help" class="question-help"></p>
+  </div>
+  <div class="answer-grid">
+    <button id="yes-btn" class="answer yes">YES</button>
+    <button id="no-btn" class="answer no">NO</button>
+  </div>
+</section>
+
+<section id="screen-result" class="screen">
+  <div class="eyebrow">YOUR CHARACTER IS</div>
+  <div class="portrait-shell">
+    <img id="character-image" alt="" hidden>
+    <div id="portrait-placeholder" class="portrait-placeholder">?</div>
+  </div>
+  <h1 id="character-name">Character</h1>
+  <div id="answer-code" class="code"></div>
+  <button id="again-btn" class="primary">PLAY AGAIN</button>
+</section>
+
+<section id="screen-error" class="screen">
+  <div class="eyebrow">NO UNIQUE MATCH</div>
+  <h1>Something didn’t line up.</h1>
+  <div id="error-code" class="code"></div>
+  <button id="retry-btn" class="primary">TRY AGAIN</button>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
