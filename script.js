@@ -139,3 +139,18 @@ document.getElementById('no-btn').addEventListener('click',()=>answer(false));
 document.getElementById('back-btn').addEventListener('click',goBack);
 document.getElementById('result-back-btn').addEventListener('click',goBack);
 document.getElementById('error-back-btn').addEventListener('click',goBack);
+
+// Keyboard shortcuts (desktop): Left Arrow = YES, Right Arrow = NO.
+// Ignore held-key repeats so one press can never skip multiple questions.
+document.addEventListener('keydown',(event)=>{
+  if(event.repeat) return;
+  if(!screens.question.classList.contains('active')) return;
+
+  if(event.key==='ArrowLeft'){
+    event.preventDefault();
+    answer(true);
+  }else if(event.key==='ArrowRight'){
+    event.preventDefault();
+    answer(false);
+  }
+});
