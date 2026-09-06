@@ -60,3 +60,11 @@ h1{font-size:clamp(2.6rem,11vw,4.6rem);line-height:.96;margin:18px 0;letter-spac
   .app{padding-left:14px;padding-right:14px}
   .answer{min-height:104px}
 }
+
+/* v2 readability + navigation */
+.ghost[hidden]{visibility:hidden;display:block}
+.question-wrap h2 strong{font-weight:1000}
+.question-wrap h2 .or{display:inline-block;color:var(--accent);font-size:.58em;font-weight:1000;letter-spacing:.08em;margin:0 .08em;vertical-align:.14em}
+.result-topbar{position:absolute;top:max(22px,env(safe-area-inset-top));left:20px}
+#screen-result,#screen-error{position:relative}
+@media(max-width:390px){.result-topbar{left:14px}}
