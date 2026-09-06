@@ -1,43 +1,45 @@
 const QUESTIONS = [
-  'Does your character wear <strong>GLASSES</strong> <span class="or">OR</span> have a <strong>TINY NOSE</strong>?',
-  'Does your character have a <strong>BEARD</strong> <span class="or">OR</span> <strong>WHITE HAIR</strong>?',
-  'Does your character have <strong>BLACK HAIR</strong> <span class="or">OR</span> <strong>ORANGE HAIR</strong>?',
-  'Is your character a <strong>WOMAN</strong> <span class="or">OR</span> wearing a <strong>HAT</strong> <span class="or">OR</span> <strong>BALD</strong>?',
-  'Does your character have a <strong>MOUSTACHE</strong> <span class="or">OR</span> is <strong>BALD</strong> <span class="or">OR</span> have <strong>YELLOW HAIR</strong>?'
+  'Does your character wear <strong>GLASSES</strong> <span class="or">OR</span> have a <strong>BEARD</strong>?',
+  'Does your character have a <strong>TINY NOSE</strong> <span class="or">OR</span> is <strong>BALD</strong> <span class="or">OR</span> have <strong>YELLOW HAIR</strong>?',
+  'Is your character wearing a <strong>HAT</strong> <span class="or">OR</span> have a <strong>MOUSTACHE</strong> <span class="or">OR</span> a <strong>BEARD</strong>?',
+  'Is your character wearing a <strong>HAT</strong> <span class="or">OR</span> have <strong>BROWN HAIR</strong> <span class="or">OR</span> <strong>WHITE HAIR</strong>?',
+  'Is your character <strong>BALD</strong> <span class="or">OR</span> have <strong>BLACK HAIR</strong> <span class="or">OR</span> <strong>BROWN HAIR</strong>?'
 ];
 
 const QUESTION_HELP = [
-  '', '', '',
+  '',
+  'If ANY ONE of these is true, answer YES.',
+  'If ANY ONE of these is true, answer YES.',
   'If ANY ONE of these is true, answer YES.',
   'If ANY ONE of these is true, answer YES.'
 ];
 
-// Verified v2 five-question lookup. 1 = YES, 0 = NO.
+// User-verified five-question lookup. 1 = YES, 0 = NO.
 const CHARACTERS = {
-  '10101':'Alex',
-  '01101':'Alfred',
-  '11010':'Anita',
-  '00110':'Anne',
-  '00010':'Bernard',
-  '01111':'Bill',
-  '00001':'Charles',
-  '10110':'Claire',
-  '01001':'David',
-  '00011':'Eric',
-  '00100':'Frans',
-  '01010':'George',
-  '00111':'Herman',
-  '10001':'Joe',
-  '10010':'Maria',
+  '01101':'Alex',
+  '00100':'Alfred',
+  '01010':'Anita',
+  '00001':'Anne',
+  '00111':'Bernard',
+  '11101':'Bill',
+  '01100':'Charles',
+  '11110':'Claire',
+  '11100':'David',
+  '01110':'Eric',
+  '00000':'Frans',
+  '00110':'George',
+  '01001':'Herman',
+  '11000':'Joe',
+  '01111':'Maria',
   '00101':'Max',
-  '11000':'Paul',
-  '01000':'Peter',
-  '01100':'Philip',
-  '01011':'Richard',
-  '00000':'Robert',
+  '10010':'Paul',
+  '00010':'Peter',
+  '10101':'Philip',
+  '11111':'Richard',
+  '00011':'Robert',
   '11011':'Sam',
-  '10011':'Susan',
-  '10111':'Tom'
+  '01000':'Susan',
+  '11001':'Tom'
 };
 
 const IMAGE_EXTENSIONS=['jpg','jpeg','png','webp'];
